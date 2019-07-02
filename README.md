@@ -1,4 +1,5 @@
 # Eidos Interpreter
+Interactive interpreter based on the Eidos programming language.  See Eidos Manual for syntax.  Most functionality has been implemented, with the except of several cases.
 
 For interactive parser:
 
