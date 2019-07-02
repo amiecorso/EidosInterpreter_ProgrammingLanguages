@@ -1,0 +1,14 @@
+The Fast Pelicans
+CIS 624 Assignment 7 Eidos Interpreter
+
+Notes:
+
+We implemented our interpreter by using a recursive "run" function on our ast, which is just a giant nested tuple.  The run function matches the leftmost item in the tuple and performs functionality according to its type (such as "==" or "while") - usually recursively calling run on any contained expressions.  We chose not to implement our ast using a class hierarchy of node types.... but if the project was going to be extended and we had had the foresight when first beginnging our parser, we probably would have.  This would allow more efficient tree traversal by simply recursively invoking the evaluate method of each node, instead of first having to match each node against a long list of cases.  The list of cases is short enough that it probably doesn't matter in practice, but we recognize the inefficiency.
+
+We made slight changes to our parse rules for variable and constants. Instead of simply grabbing the value and inserting that into our abstract syntax tree, we insert a tuple with either 'var' or 'const' at the 0th index and then the variable name or literal in the 1st index.  This allowed us to write correct interpreter behavior and was in line with our original semantic rules.
+
+We added parsing and interpretation for logical types "T" and "F".
+
+We added parsing but not interpretation for function declarations.
+
+
