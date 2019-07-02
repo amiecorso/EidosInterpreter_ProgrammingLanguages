@@ -1,13 +1,13 @@
-# cis-624-final-project
+# Eidos Interpreter
 
 For interactive parser:
 
 run from command line:
 
-python3 parser_interpreter_a5.py
+python3 parser_interpreter.py
 
-To run a test file (binarysearch_i.e):
+To run a test file (factorial.e):
 
 run from command line:
 
-python3 parser_interpreter_a5.py run binarysearch_i.e
+python3 parser_interpreter.py run factorial.e
